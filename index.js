@@ -91,7 +91,7 @@ exports.sendNotification = functions.database.ref('/notifications/{user_id}/{not
 
       return admin.messaging().sendToDevice(token_id, payload).then(response => {
 
-        console.log('This was the notification Feature');
+         return console.log('This was the notification Feature');
 
       });
 
